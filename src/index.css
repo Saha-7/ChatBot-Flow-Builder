@@ -1,0 +1,61 @@
+/* TailwindCSS imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles for the Chatbot Flow Builder */
+@layer base {
+  body {
+    @apply bg-gray-50 font-sans antialiased;
+  }
+  
+  #root {
+    @apply h-screen w-screen;
+  }
+}
+
+/* React Flow specific styles */
+@layer components {
+  .react-flow__node {
+    @apply text-xs;
+  }
+
+  .react-flow__handle {
+    @apply w-2 h-2 bg-gray-600 border-2 border-white;
+  }
+
+  .react-flow__handle-top {
+    @apply -top-1;
+  }
+
+  .react-flow__handle-bottom {
+    @apply -bottom-1;
+  }
+
+  .react-flow__handle-left {
+    @apply -left-1;
+  }
+
+  .react-flow__handle-right {
+    @apply -right-1;
+  }
+
+  .react-flow__edge-path {
+    @apply stroke-gray-600 stroke-2;
+  }
+
+  .react-flow__edge.selected .react-flow__edge-path {
+    @apply stroke-blue-500;
+  }
+
+  .react-flow__edge.animated .react-flow__edge-path {
+    stroke-dasharray: 5;
+    animation: dashdraw 0.5s linear infinite;
+  }
+}
+
+@keyframes dashdraw {
+  to {
+    stroke-dashoffset: -10;
+  }
+}
