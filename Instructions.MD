@@ -45,3 +45,18 @@ Note: I want similar UI, I am sharing the images also.
 
 check off items in the plan as we accomplished them as todo list. If you have open questions that require my input etc add those in the plan as well.
 
+
+All functionality working but Some changes I want:-
+
+1. Use vite to build the project
+2. Use TailwindCSS instead of normal css
+3. I want the all code should be beginner friendly. so that anyoone can understand and break into more components if possible.
+4. move the Nodespannel to the right hand side
+5. dont use extra library for icon use icon links from icons8.com if possible
+6. use react toastify instead of the Alert.
+7. You have given each node connection point on top & bottom of the node, I want it to only left & right side.
+
+
+
+
+

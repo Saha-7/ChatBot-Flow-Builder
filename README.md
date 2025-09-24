@@ -1,17 +1,18 @@
 # Chatbot Flow Builder
 
-A simple and extensible Chatbot flow builder built with React and React Flow. This application allows you to create conversational flows by connecting text message nodes together.
+A modern, beginner-friendly Chatbot flow builder built with **React**, **Vite**, **TailwindCSS**, and **React Flow**. This application allows you to create conversational flows by connecting text message nodes together.
 
-## Features
+## ✨ Features
 
 ### ✅ Implemented Features
 
 1. **Text Node**
-   - Support for text message nodes
+   - Support for text message nodes with clean, modern design
    - Multiple text nodes can be added to a single flow
-   - Nodes are added by clicking in the Nodes Panel
+   - Nodes are added by clicking in the Nodes Panel (right side)
+   - Left/right connection handles (green for input, red for output)
 
-2. **Nodes Panel**
+2. **Nodes Panel** (Right Side)
    - Houses all available node types
    - Currently supports Text Message nodes
    - Designed to be easily extensible for future node types
@@ -20,16 +21,17 @@ A simple and extensible Chatbot flow builder built with React and React Flow. Th
 3. **Edge Connections**
    - Connect nodes together to create flow logic
    - Visual representation of message flow
+   - Smooth animations and hover effects
 
-4. **Source Handle**
-   - Located at the bottom of each node
+4. **Source Handle** (Right Side)
+   - Located on the right side of each node
    - Can only have **one edge** originating from it
-   - Red colored handle
+   - Red colored handle with hover effects
 
-5. **Target Handle**
-   - Located at the top of each node
+5. **Target Handle** (Left Side)
+   - Located on the left side of each node
    - Can have **multiple edges** connecting to it
-   - Green colored handle
+   - Green colored handle with hover effects
 
 6. **Settings Panel**
    - Replaces the Nodes Panel when a node is selected
@@ -39,14 +41,15 @@ A simple and extensible Chatbot flow builder built with React and React Flow. Th
 
 7. **Save Button**
    - Validates the flow before saving
+   - Shows toast notifications instead of alerts
    - Shows error if more than one node has empty target handles
    - Saves flow data to console (ready for backend integration)
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js (version 14 or higher)
+- Node.js (version 16 or higher)
 - npm or yarn
 
 ### Installation
@@ -59,10 +62,22 @@ A simple and extensible Chatbot flow builder built with React and React Flow. Th
 
 3. Start the development server:
    ```bash
-   npm start
+   npm run dev
    ```
 
 4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
 
 ## Usage
 
@@ -130,12 +145,14 @@ const nodeTypes = {
 </div>
 ```
 
-## Technologies Used
+## 🛠️ Technologies Used
 
-- **React** - Frontend framework
+- **React 18** - Modern frontend framework
+- **Vite** - Fast build tool and development server
+- **TailwindCSS** - Utility-first CSS framework
 - **React Flow** - Flow diagram library
-- **Lucide React** - Icon library
-- **CSS3** - Styling
+- **React Toastify** - Toast notification library
+- **Icons8** - Icon library (via CDN)
 
 ## Future Enhancements
 
