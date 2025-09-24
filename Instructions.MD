@@ -5,14 +5,14 @@ Let's build a simple Chatbot flow builder using React and try to make the code e
 A chatbot flow is built by connecting multiple messages together to decide the order of execution.
 
 
-- look at Image_1.webp
+- look at Image_1.png
 
 
 #**Note →** 
 
 - Use https://reactflow.dev/ for the flow builder.
 - You are free to use any other library on top of React Flow.
-- You can use either of JavaScript or TypeScript for this Task
+-  use JavaScript for this Task
 - Add comments to explain your code
 
 # Features:
@@ -33,13 +33,13 @@ A chatbot flow is built by connecting multiple messages together to decide the o
     1. Target of a connecting edge
     2. Can have **more than one edge** connecting to a target handle 
 6. **Settings Panel**
-    - Look at Image_2.webp
+    - Look at Image_2.png
     1. Settings Panel will replace the Nodes Panel when a Node is selected
     2. It has a text field to edit text of the selected Text Node
 7. **Save Button**
     1. Button to save the flow 
     2. **Save button press will show an error if there are more than one Nodes and more than one Node has empty target handles**
-    - Look at Image_3.webp
+    - Look at Image_3.png
 
 Note: I want similar UI, I am sharing the images also.
 
