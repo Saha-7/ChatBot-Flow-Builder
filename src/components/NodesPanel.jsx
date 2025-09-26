@@ -55,7 +55,7 @@ const NodesPanel = ({ onAddTextNode }) => {
         </div>
 
         {/* Future Node Types - Coming Soon */}
-        <div className="flex items-center p-3 mb-2 bg-gray-100 border border-gray-200 rounded-lg opacity-50 cursor-not-allowed">
+        {/* <div className="flex items-center p-3 mb-2 bg-gray-100 border border-gray-200 rounded-lg opacity-50 cursor-not-allowed">
           <div className="flex items-center justify-center w-10 h-10 bg-gray-400 text-white rounded-lg mr-3">
             <img 
               src="https://img.icons8.com/ios/20/FFFFFF/image.png" 
@@ -81,7 +81,7 @@ const NodesPanel = ({ onAddTextNode }) => {
             <div className="text-sm font-semibold text-gray-600 mb-1">Button</div>
             <div className="text-xs text-gray-500">Coming soon</div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
