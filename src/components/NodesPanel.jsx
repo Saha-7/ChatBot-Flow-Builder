@@ -16,10 +16,10 @@ const NodesPanel = ({ onAddTextNode }) => {
   return (
     <div className="h-full flex flex-col bg-white">
       {/* Panel Header */}
-      <div className="p-6 pb-4 border-b border-gray-200">
+      {/* <div className="p-6 pb-4 border-b border-gray-200">
         <h3 className="text-lg font-semibold text-gray-800 mb-1">Available Nodes</h3>
         <p className="text-sm text-gray-600">Click to add to flow</p>
-      </div>
+      </div> */}
       
       {/* Panel Content */}
       <div className="flex-1 p-4 overflow-y-auto">
