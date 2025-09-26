@@ -43,34 +43,33 @@ const SettingsPanel = ({ node, onUpdateNode, onClose }) => {
   return (
     <div className="h-full flex flex-col bg-white">
       {/* Panel Header */}
-      <div className="flex items-center justify-between p-6 pb-4 border-b border-gray-200">
-        <div className="flex items-center gap-2">
-          <img 
-            src="https://img.icons8.com/ios/20/3B82F6/message-squared.png" 
-            alt="Message" 
-            className="w-5 h-5"
-          />
-          <span className="text-lg font-semibold text-gray-800">Message Settings</span>
-        </div>
-        <button 
-          className="flex items-center justify-center w-8 h-8 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors duration-200"
-          onClick={onClose}
-          title="Close settings"
-        >
-          <img 
-            src="https://img.icons8.com/ios/16/666666/multiply.png" 
-            alt="Close" 
-            className="w-4 h-4"
-          />
-        </button>
-      </div>
+<div className="relative flex items-center justify-center p-6 pb-4 border-b border-gray-200">
+  
+  {/* Back Button (left side) */}
+  <button 
+    className="absolute left-6 flex items-center justify-center w-8 h-8 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors duration-200"
+    onClick={onClose}
+    title="Close settings"
+  >
+    <img 
+      src="https://img.icons8.com/fluency-systems-regular/48/long-arrow-left.png" 
+      alt="Close" 
+      className="w-4 h-4"
+    />
+  </button>
+
+  {/* Centered Title */}
+  <span className="text-lg font-semibold text-gray-800">Message</span>
+
+</div>
+
 
       {/* Panel Content */}
       <div className="flex-1 p-6 overflow-y-auto">
         {/* Text Editing Section */}
         <div className="mb-6">
           <label className="block text-sm font-semibold text-gray-800 mb-2">
-            Message Text
+            Text
           </label>
           <textarea
             className="w-full p-3 border border-gray-300 rounded-lg text-sm font-sans resize-vertical min-h-[80px] focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100 transition-all duration-200"
