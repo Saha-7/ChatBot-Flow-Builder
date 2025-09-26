@@ -1,4 +1,3 @@
-import React from 'react';
 import { Handle, Position } from 'reactflow';
 
 /**
@@ -28,7 +27,7 @@ const TextNode = ({ data, isConnectable }) => {
       {/* Node Content */}
       <div className="flex flex-col gap-2">
         {/* Header with icon and label */}
-        <div className="flex items-center gap-2 mb-1">
+        <div className="flex items-center gap-2 mb-1 bg-cyan-400">
           {/* Message icon from icons8.com */}
           <img 
             src="https://img.icons8.com/ios/20/3B82F6/message-squared.png" 
