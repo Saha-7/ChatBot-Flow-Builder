@@ -86,7 +86,7 @@ const SettingsPanel = ({ node, onUpdateNode, onClose }) => {
         </div>
 
         {/* Node Information Section */}
-        <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+        {/* <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
           <h4 className="text-sm font-semibold text-gray-800 mb-3">Node Information</h4>
           
           <div className="space-y-2">
@@ -111,7 +111,7 @@ const SettingsPanel = ({ node, onUpdateNode, onClose }) => {
               </span>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
