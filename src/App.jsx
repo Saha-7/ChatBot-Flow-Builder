@@ -99,7 +99,7 @@ function FlowBuilder() {
     <div className="h-screen flex flex-col bg-gray-50">
       {/* Header Section */}
       <header className="bg-white border-b border-gray-200 px-8 py-4 flex justify-between items-center shadow-sm">
-        <h1 className="text-2xl font-semibold text-gray-800">Chatbot Flow Builder</h1>
+        <h1 className="text-2xl font-semibold text-gray-800">ChatBot Flow Builder</h1>
         <SaveButton onSave={saveFlow} />
       </header>
       
